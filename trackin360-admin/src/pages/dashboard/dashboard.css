@@ -1,0 +1,61 @@
+.purview-dashboard { min-height:100vh; display:flex; flex-direction:column; background:#eee; color:#16314a; font:14px Arial,sans-serif; }
+.purview-dashboard .purview-header { min-height:54px; display:flex; align-items:center; gap:44px; padding:0 24px; background:#333; color:white; border-bottom:4px solid #17a398; }
+.purview-dashboard .brand { font-size:20px; }
+.purview-dashboard .manage-button { display:flex; align-items:center; gap:5px; min-height:50px; padding:0 12px; border:0; background:transparent; color:inherit; font:inherit; cursor:pointer; white-space:nowrap; }
+.purview-dashboard .manage-button:hover,.purview-dashboard .manage-button.is-open { background:#555; }
+.purview-dashboard .manage-button.is-open svg:last-child { transform:rotate(180deg); }
+.purview-dashboard nav,.purview-dashboard .account { display:flex; align-items:center; gap:24px; }
+.purview-dashboard .purview-header a { display:flex; align-items:center; gap:5px; white-space:nowrap; }
+.purview-dashboard .purview-header svg { font-size:18px; }
+.purview-dashboard .account { margin-left:auto; gap:14px; }
+.purview-dashboard .message-dot { width:8px; height:8px; border-radius:50%; background:#ff5722; align-self:flex-start; }
+.purview-dashboard .avatar { width:29px; height:29px; border-radius:50%; background:white; color:#333; display:grid; place-items:center; }
+.purview-dashboard .tabbar { height:43px; display:flex; justify-content:space-between; background:white; border-bottom:1px solid #ddd; }
+.purview-dashboard .tabbar a { display:flex; align-items:center; gap:7px; padding:0 17px; }
+.purview-dashboard .home-tab { background:#17a398; color:white; }
+.purview-dashboard .tabbar svg { font-size:18px; }
+.purview-dashboard .dashboard-content { flex:1; padding:10px 16px 0; border-left:2px solid #17a398; position:relative; overflow:hidden; }
+.purview-dashboard footer { padding:15px; text-align:center; }
+.purview-dashboard .world-map { position:absolute; width:90%; height:90%; left:5%; top:65px; color:#d2e3e5; pointer-events:none; }
+.purview-dashboard .summary-grid,.purview-dashboard .lower-grid { position:relative; display:grid; grid-template-columns:1fr 1fr 2fr; gap:10px; }
+.purview-dashboard .panel { background:rgba(255,255,255,.62); border:1px solid #e7e7e7; border-radius:2px; box-shadow:0 1px 2px #00000004; }
+.purview-dashboard h2 { margin:0; font-size:14px; font-weight:400; }
+.purview-dashboard .summary,.purview-dashboard .search { min-height:138px; padding:14px 15px; }
+.purview-dashboard .number { color:#ff3547; font-size:36px; margin-top:25px; line-height:1; }
+.purview-dashboard .detail { display:flex; justify-content:space-between; margin-top:15px; }
+.purview-dashboard form { display:flex; align-items:center; gap:5px; margin-top:24px; flex-wrap:wrap; }
+.purview-dashboard form label { display:flex; align-items:center; gap:9px; margin-right:18px; }
+.purview-dashboard .radio { height:14px; width:14px; border:1px solid #40c586; border-radius:50%; background:#40c586; box-shadow:inset 0 0 0 3px white; }
+.purview-dashboard input { width:182px; min-width:80px; height:38px; border:1px solid #ccc; background:white; border-radius:2px; padding:7px 10px; color:#16314a; }
+.purview-dashboard .action { display:inline-flex; align-items:center; justify-content:center; gap:5px; border:0; border-radius:2px; padding:10px 18px; color:white; cursor:pointer; font:inherit; white-space:nowrap; }
+.purview-dashboard .action svg { font-size:17px; }
+.purview-dashboard .action:hover { filter:brightness(.94); }
+.purview-dashboard .teal { background:#00998c; height:38px; }
+.purview-dashboard .lower-grid { grid-template-columns:1fr 1fr; margin-top:20px; align-items:start; }
+.purview-dashboard .shortcuts { min-height:200px; padding:14px 15px; }
+.purview-dashboard .shortcut-grid { display:grid; grid-template-columns:1fr 1fr; column-gap:24px; row-gap:29px; margin-top:30px; padding-bottom:5px; }
+.purview-dashboard .shortcut-grid a { display:flex; align-items:center; gap:3px; }
+.purview-dashboard .shortcut-grid svg { font-size:18px; color:#ff3547; }
+.purview-dashboard .shortcut-grid a:hover { color:#00998c; }
+.purview-dashboard .alarm-top { padding:14px 0 19px; }
+.purview-dashboard .alarm-top h2 { padding-left:14px; }
+.purview-dashboard .alarm-controls { display:flex; align-items:center; gap:22px; border-left:4px solid #009f92; margin-top:14px; padding:15px 16px; flex-wrap:wrap; }
+.purview-dashboard .orange { background:#ff5722; }
+.purview-dashboard .yellow { background:#ffb900; }
+.purview-dashboard .alarm-controls label { display:flex; align-items:center; gap:10px; color:#111; }
+.purview-dashboard .sound { display:flex; align-items:center; gap:5px; border:1px solid #ddd; background:white; color:#8c9399; border-radius:14px; padding:3px 5px; font-size:12px; cursor:pointer; }
+.purview-dashboard .sound span { height:16px; width:16px; border-radius:50%; background:#d2d2d2; }
+.purview-dashboard .sound.on span { background:#00998c; }
+.purview-dashboard .table-scroll { overflow:auto; max-height:240px; background:white; }
+.purview-dashboard table { width:100%; border-collapse:collapse; table-layout:fixed; font-size:14px; color:#607086; }
+.purview-dashboard th,.purview-dashboard td { border:1px solid #e3e3e3; text-align:left; padding:9px 15px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-weight:400; }
+.purview-dashboard th { background:#f2f2f2; height:39px; position:sticky; top:0; }
+.purview-dashboard th:last-child { width:46%; }
+.purview-dashboard td { height:39px; }
+.purview-dashboard .row-actions { display:flex; align-items:center; gap:4px; }
+.purview-dashboard .row-actions .action { padding:3px 5px; font-size:12px; gap:3px; }
+.purview-dashboard .row-actions svg { font-size:14px; }
+.purview-dashboard .empty { text-align:center; padding:24px; }
+.purview-dashboard a:focus-visible,.purview-dashboard button:focus-visible,.purview-dashboard input:focus-visible { outline:2px solid #00998c; outline-offset:3px; }
+@media(max-width:1000px) { .purview-dashboard .purview-header { gap:24px; padding:12px 16px; flex-wrap:wrap; } .purview-dashboard nav { gap:16px; } .purview-dashboard .summary-grid { grid-template-columns:1fr 1fr; } .purview-dashboard .search { grid-column:1/-1; min-height:110px; } .purview-dashboard .lower-grid { grid-template-columns:1fr; } }
+@media(max-width:600px) { .purview-dashboard nav { order:3; width:100%; flex-wrap:wrap; font-size:12px; gap:12px; } .purview-dashboard .account { font-size:12px; gap:8px; } .purview-dashboard .dashboard-content { padding:10px 8px; } .purview-dashboard .shortcut-grid { column-gap:8px; font-size:12px; } .purview-dashboard input { flex:1; width:100px; } .purview-dashboard form label { margin-right:5px; } .purview-dashboard .alarm-controls { gap:12px; } .purview-dashboard table { min-width:590px; } }
